@@ -35,14 +35,9 @@ class HomeScreen extends StatelessWidget {
         });
         return Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.grey[50],
-            title: const Text(
-              "your daily Schedule",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
+            // backgroundColor: Colors.grey[50],
+            title: Text("your daily Schedule",
+                style: Theme.of(context).textTheme.headline1),
             elevation: 0.0,
             centerTitle: true,
           ),
@@ -62,18 +57,9 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           Text(
                             DateFormat.yMMMd().format(DateTime.now()),
-                            style: TextStyle(
-                              color: Colors.grey[600],
-                              fontSize: 18,
-                            ),
                           ),
-                          const Text(
-                            "Today",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 26,
-                                fontWeight: FontWeight.bold),
-                          ),
+                          Text("Today",
+                              style: Theme.of(context).textTheme.headline4),
                         ],
                       )),
                       TextButton.icon(
@@ -114,17 +100,13 @@ class HomeScreen extends StatelessWidget {
                               height: 90,
                               semanticsLabel: 'Task',
                             ),
-                            const Padding(
+                            Padding(
                               padding: EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 10),
                               child: Text(
-                                "You do not have any tasks yet!\nAdd new tasks to make your days productive.",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold),
-                              ),
+                                  "You do not have any tasks yet!\nAdd new tasks to make your days productive.",
+                                  textAlign: TextAlign.center,
+                                  style: Theme.of(context).textTheme.headline1),
                             ),
                             const SizedBox(
                               height: 80,

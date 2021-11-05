@@ -47,15 +47,14 @@ class AddTask extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Add Task",
-                      style:
-                          TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                      style: Theme.of(context).textTheme.bodyText2,
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.03,
                     ),
-                    const Formfelidheder(title: "Title"),
+                    Formfelidheder(title: "Title"),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.015,
                     ),

@@ -187,19 +187,22 @@ Widget datebar(BuildContext context) {
       initialSelectedDate: DateTime.now(),
       selectionColor: Colors.transparent,
       selectedTextColor: pinkClr,
-      dateTextStyle: const TextStyle(
-        fontSize: 20.0,
-        fontWeight: FontWeight.w600,
-        color: Colors.grey,
-      ),
-      dayTextStyle: const TextStyle(
-        fontSize: 10.0,
-        color: Colors.grey,
-      ),
-      monthTextStyle: const TextStyle(
-        fontSize: 10.0,
-        color: Colors.grey,
-      ),
+      dateTextStyle: Theme.of(context).textTheme.headline2 ??
+          TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.w600,
+            color: Colors.grey,
+          ),
+      dayTextStyle: Theme.of(context).textTheme.headline3 ??
+          TextStyle(
+            fontSize: 10.0,
+            color: Colors.grey,
+          ),
+      monthTextStyle: Theme.of(context).textTheme.headline3 ??
+          TextStyle(
+            fontSize: 10.0,
+            color: Colors.grey,
+          ),
       onDateChange: (date) {
         AppCubit.get(context).datechange(date);
       },
@@ -266,8 +269,7 @@ class Formfelidheder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: const TextStyle(
-          fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+      style: Theme.of(context).textTheme.headline1,
     );
   }
 }
