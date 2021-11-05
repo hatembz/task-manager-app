@@ -1,9 +1,7 @@
 name: mymanager
 description: A new Flutter project.
 
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' 
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -39,10 +37,8 @@ dependencies:
   sqflite: ^2.0.0+4
   bloc: ^7.2.0
   flutter_svg: ^0.22.0
-  day_night_time_picker: ^1.0.3+1
   syncfusion_flutter_datepicker: ^19.2.62
   flutter_bloc: ^7.3.0
-  flutter_local_notifications: ^8.2.0
   awesome_notifications: ^0.0.6+10
  
 dev_dependencies:

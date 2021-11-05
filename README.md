@@ -1,16 +1,13 @@
 # mymanager
 
-A new Flutter project.
+A flutter todo app to help keep track of your.
 
-## Getting Started
+## FEATURES
 
-This project is a starting point for a Flutter application.
+- dark and light mode
+- local notification using [awesome_notifications](https://pub.dev/packages/awesome_notifications)
+- local database using  [sqflite](https://pub.dev/packages/sqflite)
 
-A few resources to get you started if this is your first Flutter project:
+UI/UX : (https://dribbble.com/shots/14557819-Task-Management-App)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image info](images\1.jpg)|![image info](images\2.jpg)|![image info](images\3.jpg)|![image info](images\4.jpg)
